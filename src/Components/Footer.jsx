@@ -9,7 +9,7 @@ function Footer() {
             </footer>
 
             {/* Fixed footer for desktop */}
-            <footer className="bg-dark text-white text-center py-5 d-none d-lg-block animate__animated animate__fadeInUp">
+            <footer data-aos="fade-down" className="bg-dark text-white text-center py-5 d-none d-lg-block">
                 © 2025 My Website
             </footer>
         </>
