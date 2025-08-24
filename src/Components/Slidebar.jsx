@@ -2,7 +2,7 @@ import React from 'react'
 
 function Slidebar() {
   return (
-    <div id="carouselExampleCaptions" className="carousel slide">
+    <div id="carouselExampleCaptions" className="carousel slide animate__animated animate__bounceInDown animate__slow">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -12,11 +12,15 @@ function Slidebar() {
     <div className="carousel-item active">
       <img src="https://images.unsplash.com/photo-1755272853203-1469840c4c60?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className="d-block w-100 mx-auto" style={{height: "450px", objectFit: "cover"}}/>
       <div className="carousel-caption">
+        <div class="animate__animated animate__fadeInDown animate__delay-2s">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        <div class="animate__animated animate__fadeInUp animate__delay-2s">
         <button class="btn btn-primary mx-2 my-2">Web Development</button>
         <button class="btn btn-danger mx-2 my-2">Technology</button>
         <button class="btn btn-success mx-2 my-2">Tools</button>
+        </div>
       </div>
     </div>
     <div className="carousel-item">
