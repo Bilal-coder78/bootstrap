@@ -17,19 +17,10 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path='/home' element={
-          <>
-            <Slidebar />
-            <Footer />
-          </>
-        } />
-        <Route path='/about' element={
-          <>
-            <About />
-            <Footer />
-          </>
-        } />
+        <Route path='/home' element={<Slidebar />} />
+        <Route path='/about' element={<About />} />
       </Routes>
+      <Footer />
     </>
   )
 }
